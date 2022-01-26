@@ -235,13 +235,13 @@ pt: &DEFAULT_PT
   breadcrumb_separator       : "/"
   menu_label                 :
   search_label               :
-  toc_label                  : "Nesta Página"
+  toc_label                  : "Conteúdo"
   ext_link_label             : "Link Direto"
   less_than                  : "menos de"
   minute_read                : "minutos de leitura"
   share_on_label             : "Compartilhar no"
   meta_label                 :
-  tags_label                 : "Etiquetas:"
+  tags_label                 : "Assuntos:"
   categories_label           : "Categorias:"
   date_label                 : "Atualizado:"
   comments_label             : "Deixe um Comentário"
@@ -283,7 +283,7 @@ pt-BR:
   breadcrumb_separator       : "/"
   menu_label                 : "lig/desl menu"
   search_label               : "lig/desl busca"
-  toc_label                  : "Nesta página"
+  toc_label                  : "Conteúdo"
   ext_link_label             : "Link direto"
   less_than                  : "menos de"
   minute_read                : "minutos de leitura"
@@ -296,7 +296,7 @@ pt-BR:
   comments_title             : "Comentários"
   more_label                 : "Saiba mais"
   related_label              : "Veja também"
-  follow_label               : "Siga:"
+  follow_label               : "Siga"
   feed_label                 : "Feed"
   powered_by                 : "Desenvolvido com"
   website_label              : "Site"

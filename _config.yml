@@ -20,7 +20,7 @@ title                    : "Programática"
 title_separator          : "-"
 subtitle                 : programação criativa
 name                     : "programática"
-description              : "Tutoriais e ajuda para começar a programar."
+description              : "Tutoriais e ajuda para começar a programar criativamente."
 url                      : "https://grzzr.github.io"
 baseurl                  : "/programatica"
 repository               : "grzzr/programatica"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Programática"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Programação criativa. Tutoriais, cursos e ajuda para começar a programar."
+  bio              : "Programação criativa."
   location         : "Porto Alegre/RS - Brasil"
   email            : programatica@protonmail.com
   links:
@@ -178,8 +178,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  #- /docs # ignore Minimal Mistakes /docs
-  #- /test # ignore Minimal Mistakes /test
   - /downloads
 keep_files:
   - .git
@@ -263,8 +261,8 @@ tag_archive:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
 #   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+#     category: /categoria/:name/
+#     tag: /assunto/:name/
 
 
 # HTML Compression
@@ -285,9 +283,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
-      share: true
+      comments: false
+      share: false
       related: true
-      show_date: false
+      show_date: true
       date_format: "%Y%m%d"
-
