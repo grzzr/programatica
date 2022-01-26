@@ -1,0 +1,12 @@
+# main links
+main:
+ - title: "Posts"
+    url: /posts/
+  - title: "Categorias"
+    url: /categorias/
+  - title: "Assuntos"
+    url: /assuntos/
+  - title: "Sobre"
+    url: /sobre/
+  - title: "Mapa"
+    url: /sitemap/
