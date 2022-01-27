@@ -1,12 +1,10 @@
 # main links
 main:
-  - title: "Arquivo"
-    url: /arquivo/
-  - title: "Categorias"
-    url: /categorias/
   - title: "Assuntos"
     url: /assuntos/
+  - title: "Categorias"
+    url: /categorias/
+  - title: "Arquivo"
+    url: /arquivo/
   - title: "Sobre"
     url: /sobre/
-  - title: "Mapa"
-    url: /sitemap/

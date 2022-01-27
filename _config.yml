@@ -264,7 +264,6 @@ tag_archive:
 #     category: /categoria/:name/
 #     tag: /assunto/:name/
 
-
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
