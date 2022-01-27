@@ -1,7 +1,7 @@
 ---
 title: "Artigos por assunto"
 permalink: /assuntos/
-layout: tags
+layout: collection
 entries-layout: grid
 classes: wide
 author_profile: true
