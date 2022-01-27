@@ -4,7 +4,7 @@ permalink: /assuntos/
 author_profile: false
 layout: tag
 #taxonomy: # category name
-entries_layout: grid # list (default), grid
+entries_layout: list # list (default), grid
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
