@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /sobre/
 title: "Sobre a Programática"
 ---
 
