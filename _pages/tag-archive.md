@@ -1,8 +1,10 @@
 ---
 title: "Artigos por assunto"
-layout: tag
+date: 2022-01-26T23:34:41-03:00
 permalink: /assuntos/
-date: 2022-01-26T23:10:41-03:00
+author_profile: false
+layout: tag
+entries_layout: grid
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -11,10 +13,8 @@ header:
   #actions:
   #  - label: "Download"
   #   url: "https://github.com/mmistakes/minimal-mistakes/"
-  caption: "créditos: [**pixabay:OpenClipart-Vectors**](https://pixabay.com/service/license/)"
+  caption: "créditos: [**OpenClipart-Vectors**](https://pixabay.com/service/license/)"
 excerpt: "Artigos por assunto"
 intro: 
   - excerpt: 'Aqui você encontra todos os artigos agrupados assunto. Cada artigo pode ter um ou mais assuntos.`type="center"`'
-author_profile: false
-entries_layout: grid
 ---
