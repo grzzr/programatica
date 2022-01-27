@@ -1,12 +1,13 @@
 ---
 title: "Artigos por assunto"
-layout: splash
+layout: tag
 permalink: /assuntos/
 date: 2022-01-26T23:10:41-03:00
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /img/bash-g9ab6a0b3a_1280.png
+  teaser: /img/bash-g9ab6a0b3a_1280.png
   #actions:
   #  - label: "Download"
   #   url: "https://github.com/mmistakes/minimal-mistakes/"
@@ -15,4 +16,5 @@ excerpt: "Artigos por assunto"
 intro: 
   - excerpt: 'Aqui você encontra todos os artigos agrupados assunto. Cada artigo pode ter um ou mais assuntos.`type="center"`'
 author_profile: false
+entries_layout: grid
 ---
