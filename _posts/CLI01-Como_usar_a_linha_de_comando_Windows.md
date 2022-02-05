@@ -7,23 +7,9 @@ tags:
   - CLI
   - windows
   - introdução
-author_profile: true
-toc: true
-toc_sticky: true
-
-header:
-  teaser: /img/cli01/osdc_terminals.png
-  overlay_image: /img/cli01/osdc_terminals.png
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  caption: "créditos: **Jamie Cox. Modified by Opensource.com. CC BY 2.0**"
-  excerpt: 'Como usar a linha de comando - Windows'
-  intro: 
-    - excerpt: 'Esta é a primeira aula da série de introdução à programação. Vamos começar conhecendo a linha de comando.`type="center"`'
-#  actions:
-#    - label: "Download"
-#      url: "https://"
 ---
+# Como usar a linha de comando - Windows
+
 Esta é a primeira aula da série de introdução à programação. Vamos começar conhecendo a linha de comando.
 
 Precisamos da linha de comando para realizar várias tarefas cotidianas de programação. Neste tutorial vamos experimentar três:
@@ -61,7 +47,7 @@ Todo sistema operacional tem um ou mais desses programas Shell. A diferença ent
 
 Vamos acessar o Shell do Windows para ver como ele é.
 
-O Windows tem dois programas Shell. O que vamos rodar é o programa com o ícone ![shell do windows]({{site.baseurl}}/img/cli01/Windowscmd1.png).
+O Windows tem dois programas Shell. O que vamos rodar é o programa com o ícone ![shell do windows](/img/cli01/Windowscmd1.png).
 
 Esse é o Shell mais usado no Windows, chamado CMD - Command. O outro é chamado _Power Shell_.
 
@@ -69,10 +55,10 @@ Se você já encontrou o ícone do _CMD_, é só clicar nele. Se não encontrou,
 
 1. Digite `win + r`.
   
-  Isso quer dizer para você segurar a tecla ![shell do windows]({{site.baseurl}}/img/cli01/Windowsstart.png) enquanto digita `r`. Não é preciso ficar segurando o `r`. Basta um toque para executar o comando. 
+  Isso quer dizer para você segurar a tecla ![shell do windows](/img/cli01/Windowsstart.png) enquanto digita `r`. Não é preciso ficar segurando o `r`. Basta um toque para executar o comando. 
 2. Na interface que se abrirá, digite `cmd.exe` na caixa de texto e tecle `enter`. 
 
-![Prompt de comando do Shell do Windows]({{site.baseurl}}/img/cli01/cli01-executar-cmd.png)
+![Prompt de comando do Shell do Windows](/img/cli01/cli01-executar-cmd.png)
 
 Agora a janela do Shell se abriu. 
 
@@ -86,7 +72,7 @@ O prompt de comando é última linha de texto que apareceu, que se parece com al
 
  `c:\Users\maria>` 
 
-![Prompt de comando do Shell do Windows]({{site.baseurl}}/img/cli01/cli01-shell-maria.png "Janela do Shell com o prompt de comando do Windows")
+![Prompt de comando do Shell do Windows](/img/cli01/cli01-shell-maria.png "Janela do Shell com o prompt de comando do Windows")
 
 Ao invés de "maria", você deve ver ali no prompt o seu próprio nome de usuário.
 
@@ -103,7 +89,7 @@ Para entrar um comando você escreve a linha de comando após o prompt e termina
 
 Experimente digitar `dir`. Ao teclar `enter` o comando é executado e o resultado aparece na janela do Shell.
 
-![Exemplo comando DIR]({{site.baseurl}}/img/cli01/cli01-shell-exemplo-dir.png "Exemplo de execução do comando DIR")
+![Exemplo comando DIR](/img/cli01/cli01-shell-exemplo-dir.png "Exemplo de execução do comando DIR")
 
 O comando `dir` mostra a lista do diretório atual.
 
@@ -115,7 +101,7 @@ Agora vamos rodar um programa. Para isso, digitamos o nome de um arquivo execut�
 
 Digite `notepad` e tecle `enter`. (Você poderia digitar `notepad.exe` também)
 
-![Rodando o bloco de notas]({{site.baseurl}}/img/cli01/cli01-rodar-notepad.png "Rodando o 'notepad' - bloco de notas")
+![Rodando o bloco de notas](/img/cli01/cli01-rodar-notepad.png "Rodando o 'notepad' - bloco de notas")
 
 Repare que o programa executado é o "Bloco de Notas" do Windows, caso você esteja usando o Windows com interface em português.
 
@@ -127,7 +113,7 @@ Vamos cometer um erro propositalmente para aprender uma coisa importante sobre a
 
 Digite `bloco de notas` no prompt. Você vai receber uma mensagem de erro.
 
-![Mensagem de erro do Shell]({{site.baseurl}}/img/cli01/cli01-comando-nao-reconhecido.png "Mensagem de erro do Shell - comando não reconhecido")
+![Mensagem de erro do Shell](/img/cli01/cli01-comando-nao-reconhecido.png "Mensagem de erro do Shell - comando não reconhecido")
 
 Apesar de você ter digitado `bloco de notas` a mensagem diz que o comando `bloco` não é reconhecido. 
 
@@ -156,7 +142,7 @@ Agora vamos acrescentar um parâmetro ao comando `dir` para modificar seu compor
 
 `dir /w`
 
-![Comando 'dir' com parâmetro '/w']({{site.baseurl}}/img/cli01/cli01-dir-w.png)
+![Comando 'dir' com parâmetro '/w'](/img/cli01/cli01-dir-w.png)
 
 A listagem do diretório agora foi exibida em um formato diferente, em colunas, mostrando apenas os nomes dos arquivos e diretórios que estão no diretório atual.
 
@@ -166,7 +152,7 @@ Experimente rodar o notepad agora assim:
 
 O parâmetro para o notepad é o nome de um arquivo. Se esse arquivo existisse no diretório atual, o notepad abriria ele. Como ele não existe, ele pergunta se você quer criar o arquivo.
 
-![Notepad tentando abrir arquivo não existente]({{site.baseurl}}/img/cli01/cli01-notepad-programa-txt.png)
+![Notepad tentando abrir arquivo não existente](/img/cli01/cli01-notepad-programa-txt.png)
 
 É importante observar esse comportamento do notepad do ponto de vista da programação.
 
@@ -176,12 +162,12 @@ Nesse caso o notepad está tentando tratar esse erro, oferecendo uma linha de ex
 
 O que resolve o problema, aqui, é criar o arquivo "programa.txt" e aí então abrir ele, mesmo estando vazio. Então escolha "Sim" e note que o arquivo "programa.txt" foi criado e aberto.
 
-![Notepad criando e abrindo um novo arquivo]({{site.baseurl}}/img/cli01/cli01-notepad-criar-arquivo-sim.png)
+![Notepad criando e abrindo um novo arquivo](/img/cli01/cli01-notepad-criar-arquivo-sim.png)
 
 Agora, volte para a linha de comando e digite `dir` novamente.
 Confira lá no diretório o arquivo `programa.txt` recém criado.
 
-![Arquivo novo no diretório]({{site.baseurl}}/img/cli01/cli01-programa-txt.png)
+![Arquivo novo no diretório](/img/cli01/cli01-programa-txt.png)
 
 O `0` na coluna ao lado do nome do arquivo é o tamanho do arquivo em bytes. Como ele está vazio, ele tem `0` bytes de tamanho.
 
