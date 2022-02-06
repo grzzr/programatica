@@ -145,6 +145,7 @@ Por exemplo:
 
 O comando é `notepad` essa é a parte obrigatória. A segunda parte é opcional e indica o nome de um arquivo, neste caso `Programa.java`, que será aberto pelo programa `notepad.exe`.
 
+> ### Nota
 > Alguns programas tem parâmetros obrigatórios, que você sempre vai ter que informar.
 
 Agora vamos entender melhor a mensagem de erro do Shell. 
