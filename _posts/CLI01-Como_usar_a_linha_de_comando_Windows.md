@@ -1,12 +1,20 @@
 ---
 title: "Como usar a linha de comando - Windows"
-last_modified_at: 2022-01-26-23:19:02-03:00
+author: grzzr
+date: 2022-01-23
+last_modified_at: 2022-01-26
+description:
+draft: true
 categories:
   - Tutoriais
+series: 
+  - CLI
 tags:
   - CLI
   - windows
   - introdução
+image: /img/bash-g9ab6a0b3a_1280.png
+
 ---
 # Como usar a linha de comando - Windows
 
@@ -34,14 +42,15 @@ Existem muitas linguagens de programação que tem interfaces desse mesmo tipo. 
 
 A linha de comando é acessada através de um tipo especial de programa chamado _Shell_. 
 
+> Todo sistema operacional tem um ou mais programas Shell e sua função é basicamente a mesma: dar ao usuário do computador acesso programático às funções básicas do Sistema Operacional.
+
+A maior diferença entre cada Shell acaba sendo a linguagem que cada um usa.
+
 O nome _Shell_, que quer dizer _Casca_ ou _Concha_, nos dá a ideia de que esse programa é, conceitualmente falando, uma camada que está ao redor de alguma coisa (a pérola dentro da concha) que ele não nos deixa acessar diretamente, como se ele protegesse essa coisa.
 
 Em última instância, é o hardware do computador (processador, memória, placa de video...) que está no centro de toda a execução do código e é ele a pérola que está sendo protegida pelo Shell. 
 
-Entre o Shell e o hardware também existem camadas de proteção (outras interfaces). Isso quer dizer que nem mesmo o Shell tem acesso tão direto à execução de código.
-{: .notice}
-
-Todo sistema operacional tem um ou mais desses programas Shell. A diferença entre eles é basicamente a linguagem que cada um usa.
+O Shell é uma forma simples e segura de usar o computador, Por isso não se preocupe porque você não vai fazer nada que estrague o computador usando o Shell. Isso não quer dizer que não seja possível cometer erros! Por isso, fique atento ao comandos que usaremos.
 
 ## Como acessar a linha de comando através do Shell
 
@@ -53,10 +62,11 @@ Esse é o Shell mais usado no Windows, chamado CMD - Command. O outro é chamado
 
 Se você já encontrou o ícone do _CMD_, é só clicar nele. Se não encontrou, existem várias formas de abrir o Shell. A mais rápida é em 2 passos.
 
-1. Digite `win + r`.
+1. Tecle <kbd>win + r</kbd>
   
-  Isso quer dizer para você segurar a tecla ![shell do windows](/img/cli01/Windowsstart.png) enquanto digita `r`. Não é preciso ficar segurando o `r`. Basta um toque para executar o comando. 
-2. Na interface que se abrirá, digite `cmd.exe` na caixa de texto e tecle `enter`. 
+  Isso quer dizer para você segurar a tecla ![shell do windows](/img/cli01/Windowsstart.png) enquanto tecla `r`. Não é preciso ficar segurando o `r`. Basta um toque para executar o comando. 
+
+2. Na interface que se abrirá, digite <kbd>cmd.exe</kbd> na caixa de texto e tecle <kbd>enter</kbd> 
 
 ![Prompt de comando do Shell do Windows](/img/cli01/cli01-executar-cmd.png)
 
@@ -76,42 +86,41 @@ O prompt de comando é última linha de texto que apareceu, que se parece com al
 
 Ao invés de "maria", você deve ver ali no prompt o seu próprio nome de usuário.
 
-A palavra _prompt_, em inglês, nesse contexto significa "alerta". O computador está informado que está em "estado de alerta" para receber comandos, ou seja, que ele está pronto e aguardando para receber comandos seus.
-{: .notice}
+> A palavra _prompt_, em inglês, nesse contexto significa "alerta". O computador está informado que está em "estado de alerta" para receber comandos, ou seja, que ele está pronto e aguardando para receber comandos seus.
 
 Quando o prompt não está aparecendo, provavelmente é porque o Shell está executando alguma tarefa - algum programa está rodando. Você precisa aguardar a tarefa terminar e o prompt reaparecer para poder entrar um novo comando. 
 
 ## Conhecendo o Shell na prática
 
-Para entrar um comando você escreve a linha de comando após o prompt e termina teclando `enter`.
+Para entrar um comando você escreve a linha de comando após o prompt e termina teclando <kbd>enter</kbd>.
 
 ### dir - Listar diretório
 
-Experimente digitar `dir`. Ao teclar `enter` o comando é executado e o resultado aparece na janela do Shell.
+Experimente digitar <kbd>dir</kbd>. Ao teclar <kbd>enter</kbd> o comando é executado e o resultado aparece na janela do Shell.
 
 ![Exemplo comando DIR](/img/cli01/cli01-shell-exemplo-dir.png "Exemplo de execução do comando DIR")
 
 O comando `dir` mostra a lista do diretório atual.
 
-No Windows, os diretórios são chamados de _pastas_, mas _diretório_ é o nome mais técnico desses objetos.
+Um diretório é aquilo que na interface gráfica do Windows é chamado de _pasta_. Um diretório contém arquivos e outros diretórios, formando uma estrutura que vai se ramificando, como uma árvore.
 
 ### Rodar um programa
 
 Agora vamos rodar um programa. Para isso, digitamos o nome de um arquivo executável. São os arquivos com extensão `.exe`, `.com` e `.bat`. Digitar a extensão é opcional.
 
-Digite `notepad` e tecle `enter`. (Você poderia digitar `notepad.exe` também)
+Digite <kbd>notepad</kbd> e tecle <kbd>enter</kbd>. (Você poderia digitar <kbd>notepad.exe</kbd> também)
 
 ![Rodando o bloco de notas](/img/cli01/cli01-rodar-notepad.png "Rodando o 'notepad' - bloco de notas")
 
 Repare que o programa executado é o "Bloco de Notas" do Windows, caso você esteja usando o Windows com interface em português.
 
-O nome verdadeiro desse programa é `notepad.exe` e é por esse nome que ele deve ser executado.
+> O nome verdadeiro desse programa é `notepad.exe` e é esse nome que devemos usar na linha de comando. Algo parecido vai acontecer com o nome das pastas que aparecem para você na interface gráfica do Windows. Quando você estiver usando o Shell os nomes não vão corresponder. É porque a interface gráfica do Windows traduz para o português o nome de alguns diretórios.
 
 ### Sintaxe de uma linha de código do Shell
 
 Vamos cometer um erro propositalmente para aprender uma coisa importante sobre a linha de comando.
 
-Digite `bloco de notas` no prompt. Você vai receber uma mensagem de erro.
+Digite <kbd>bloco de notas</kbd> no prompt. Você vai receber uma mensagem de erro.
 
 ![Mensagem de erro do Shell](/img/cli01/cli01-comando-nao-reconhecido.png "Mensagem de erro do Shell - comando não reconhecido")
 
@@ -119,7 +128,7 @@ Apesar de você ter digitado `bloco de notas` a mensagem diz que o comando `bloc
 
 Para entender esse erro precisamos saber que na linguagem do Shell todos os comandos começam por uma só palavra, que é o nome do comando, e que tudo o que vem depois é considerado parâmetro para o comando, que são instruções auxiliares que um comando pode precisar para executar.
 
-Essa é a _sintaxe_ de uma linha de comando. A sintaxe é, como em qualquer linguagem, o modo como uma sentença deve ser escrita, de acordo com a definição de alguma gramática dessa linguagem.
+Essa é a _sintaxe_ de uma linha de comando. A sintaxe é, como em qualquer linguagem, o modo como uma sentença deve ser formada, de acordo com a definição da gramática dessa linguagem.
 
 A sintaxe de um comando do Shell é a seguinte:
 
@@ -127,20 +136,27 @@ A sintaxe de um comando do Shell é a seguinte:
 
 O que está entre `<` e `>` é obrigatório escrever e o que está entre `[` e `]` é opcional.
 
-Sabendo disso, vamos entender melhor a mensagem de erro do Shell. 
+Por exemplo:
+
+<kbd>notepad Programa.java</kbd>
+
+O comando é `notepad` essa é a parte obrigatória. A segunda parte é opcional e indica o nome de um arquivo, neste caso `Programa.java`, que será aberto pelo programa `notepad.exe`.
+
+> Alguns programas tem parâmetros obrigatórios, que você sempre vai ter que informar.
+
+Agora vamos entender melhor a mensagem de erro do Shell. 
 
 Nesse caso, o Shell achou que você queria executar o comando `bloco` passando `de` e `notas` como parâmetros para esse comando. O Shell nem reclamou por esses parâmetros não existirem porque, pra começar, o próprio comando `bloco` não existe. Assim, o Shell não conseguiu interpretar a linha de comando que você digitou e parou a execução devolvendo uma mensagem de erro.
 
 A conclusão é que a linha de comando estava sintaticamente correta (estava de acordo com a gramática do Shell) porém, semanticamente incorreta, pois não havia interpretação possível para aquela linha de comando.
 
-Saber programar não é só saber dar os comandos certos para o computador. Entender e saber corrigir os erros que ocorrem (e são muitos!) é grande parte do trabalho e aprendemos muito com esses erros.
-{: .notice--info}
+> Saber programar não é só saber dar os comandos certos para o computador. Entender e saber corrigir os erros que ocorrem (e são muitos!) é grande parte do trabalho e aprendemos muito com esses erros.
 
 ### Comandos com parâmetros
 
-Agora vamos acrescentar um parâmetro ao comando `dir` para modificar seu comportamento. Digite:
+Agora vamos acrescentar um parâmetro ao comando `dir` para modificar seu comportamento. No prompt, digite:
 
-`dir /w`
+<kbd>dir /w</kbd>
 
 ![Comando 'dir' com parâmetro '/w'](/img/cli01/cli01-dir-w.png)
 
@@ -148,7 +164,7 @@ A listagem do diretório agora foi exibida em um formato diferente, em colunas, 
 
 Experimente rodar o notepad agora assim:
 
-`notepad programa.txt`
+<kbd>notepad programa.txt</kbd>
 
 O parâmetro para o notepad é o nome de um arquivo. Se esse arquivo existisse no diretório atual, o notepad abriria ele. Como ele não existe, ele pergunta se você quer criar o arquivo.
 
@@ -164,7 +180,7 @@ O que resolve o problema, aqui, é criar o arquivo "programa.txt" e aí então a
 
 ![Notepad criando e abrindo um novo arquivo](/img/cli01/cli01-notepad-criar-arquivo-sim.png)
 
-Agora, volte para a linha de comando e digite `dir` novamente.
+Agora, volte para a linha de comando e digite <kbd>dir</kbd> novamente.
 Confira lá no diretório o arquivo `programa.txt` recém criado.
 
 ![Arquivo novo no diretório](/img/cli01/cli01-programa-txt.png)
