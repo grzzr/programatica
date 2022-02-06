@@ -42,6 +42,7 @@ Existem muitas linguagens de programação que tem interfaces desse mesmo tipo. 
 
 A linha de comando é acessada através de um tipo especial de programa chamado _Shell_. 
 
+> ### Nota 
 > Todo sistema operacional tem um ou mais programas Shell e sua função é basicamente a mesma: dar ao usuário do computador acesso programático às funções básicas do Sistema Operacional.
 
 A maior diferença entre cada Shell acaba sendo a linguagem que cada um usa.
@@ -64,7 +65,7 @@ Se você já encontrou o ícone do _CMD_, é só clicar nele. Se não encontrou,
 
 1. Tecle <kbd>win + r</kbd>
   
-  Isso quer dizer para você segurar a tecla ![shell do windows](/img/cli01/Windowsstart.png) enquanto tecla `r`. Não é preciso ficar segurando o `r`. Basta um toque para executar o comando. 
+Isso quer dizer para você segurar a tecla ![shell do windows](/img/cli01/Windowsstart.png) enquanto tecla `r`. Não é preciso ficar segurando o `r`. Basta um toque para executar o comando. 
 
 2. Na interface que se abrirá, digite <kbd>cmd.exe</kbd> na caixa de texto e tecle <kbd>enter</kbd> 
 
@@ -86,6 +87,7 @@ O prompt de comando é última linha de texto que apareceu, que se parece com al
 
 Ao invés de "maria", você deve ver ali no prompt o seu próprio nome de usuário.
 
+> ### Nota 
 > A palavra _prompt_, em inglês, nesse contexto significa "alerta". O computador está informado que está em "estado de alerta" para receber comandos, ou seja, que ele está pronto e aguardando para receber comandos seus.
 
 Quando o prompt não está aparecendo, provavelmente é porque o Shell está executando alguma tarefa - algum programa está rodando. Você precisa aguardar a tarefa terminar e o prompt reaparecer para poder entrar um novo comando. 
@@ -114,6 +116,7 @@ Digite <kbd>notepad</kbd> e tecle <kbd>enter</kbd>. (Você poderia digitar <kbd>
 
 Repare que o programa executado é o "Bloco de Notas" do Windows, caso você esteja usando o Windows com interface em português.
 
+> ### Nota
 > O nome verdadeiro desse programa é `notepad.exe` e é esse nome que devemos usar na linha de comando. Algo parecido vai acontecer com o nome das pastas que aparecem para você na interface gráfica do Windows. Quando você estiver usando o Shell os nomes não vão corresponder. É porque a interface gráfica do Windows traduz para o português o nome de alguns diretórios.
 
 ### Sintaxe de uma linha de código do Shell
@@ -150,6 +153,7 @@ Nesse caso, o Shell achou que você queria executar o comando `bloco` passando `
 
 A conclusão é que a linha de comando estava sintaticamente correta (estava de acordo com a gramática do Shell) porém, semanticamente incorreta, pois não havia interpretação possível para aquela linha de comando.
 
+> ### Nota 
 > Saber programar não é só saber dar os comandos certos para o computador. Entender e saber corrigir os erros que ocorrem (e são muitos!) é grande parte do trabalho e aprendemos muito com esses erros.
 
 ### Comandos com parâmetros
