@@ -57,9 +57,9 @@ O Shell é uma forma simples e segura de usar o computador, Por isso não se pre
 
 Vamos acessar o Shell do Windows para ver como ele é.
 
-O Windows tem dois programas Shell. O que vamos rodar é o programa com o ícone ![shell do windows](/img/cli01/Windowscmd1.png).
+O Windows tem oficialmente três programas Shell (existem outros, mas esses são os "oficiais" porque são os programas oferecidos pela Microsoft). O que vamos rodar é o programa com o ícone ![shell do windows](/img/cli01/Windowscmd1.png).
 
-Esse é o Shell mais usado no Windows, chamado CMD - Command. O outro é chamado _Power Shell_.
+Esse é o Shell mais comum do Windows, chamado CMD - _Command Prompt_. O outro é chamado _Power Shell_ e o outro, mais novo e mais avançado, é o _Windows Terminal_, que eu recomendo muito mas que vamos deixar para outra lição.
 
 Se você já encontrou o ícone do _CMD_, é só clicar nele. Se não encontrou, existem várias formas de abrir o Shell. A mais rápida é em 2 passos.
 
