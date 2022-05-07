@@ -1,8 +1,11 @@
 # Modelo de Aplicação Desktop em C#
 
-Este é um modelo que escrevi para ajudar vocês a começarem a escrever uma aplicação desktop em C#.
+Um modelo para ajudar a começar a escrever uma aplicação desktop em C#.
 
-Ele contém apenas um método Main(), que é obrigatório, e uma classe chamada AppDesktop que tem apenas um método definido, chamado Iniciar();
+Ele contém apenas um método <code>Main()</code>, que é obrigatório, e uma classe chamada <code>AppDesktop</code> que tem apenas um método chamado <code>Iniciar()</code>;
+
+Você começa a escrever sua aplicação acrescentando código ao método <code>Iniciar()</code> que já vem pronto. Depois basta compilar e executar o programa.
+
 
 ## Como o modelo funciona
 
@@ -47,11 +50,11 @@ Para usar esse modelo você começa a escrever sua aplicação modificando o có
 
 Faça assim:
 
-1. Abra o arquivo AppDesktop.cs
-1. Escreva no corpo desse método Iniciar() as primeiras linhas código da sua aplicação (ou toda ela, caso ela seja muito curta, como a implementeção de um exercício de lógica de programação ;) )
-1. Compile passando como parâmetro para o compilador os dois arquivos deste modelo: Program.cs e AppDesktop.cs
-1. Caso você tenha criado outras classes em outros arquivos .cs, passe esses arquivos para o compilador também
-1. Execute sua aplicação rodando o arquivo Program.exe que será gerado pelo compilador
+1. Abra o arquivo <code>AppDesktop.cs</code>
+1. Escreva no corpo desse método <code>Iniciar()</code> as primeiras linhas código da sua aplicação (ou toda ela, caso ela seja muito curta, como a implementeção de um exercício de lógica de programação ;-) )
+1. Compile passando como parâmetro para o compilador os dois arquivos deste modelo: <code>Program.cs</code> e <code>AppDesktop.cs</code>
+1. Caso você tenha criado outras classes em outros arquivos <code>.cs</code>, passe esses arquivos para o compilador também
+1. Execute sua aplicação rodando o arquivo <code>Program.exe</code> que será gerado pelo compilador - note que o arquivo executável gerado não se chama <code>AppDesktop.exe</code> porque a classe que contém o método <code>Main()</code> é a classe <code>Program</code>.
 
 Exemplo:
 
