@@ -82,3 +82,30 @@ Para compilar
 
 Para executar
 >Program.exe
+
+## Como personalizar o modelo para a sua aplicação
+
+É simples. Começe mudando o nome das classes para algo que faça sentido para sua aplicação.
+
+Por exemplo, se você está escrevendo uma aplicação que vai ler as notas de uma turma de alunos e calcular a média delas, pode trocar o nome da classe <code>AppDesktop</code> para <code>CalculadorDeMedias</code>. 
+
+<pre>
+    public class CalculadorDeMedias
+    {
+        // e o restante do código fica como está
+    }
+</pre>
+
+Na classe <code>Program</code> você vai precisar fazer a alteração correspondente. Não vai mais instanciar a classe <code>AppDesktop</code> mas agora a classe <code>CalculadorDeMedias</code>. Assim:
+
+<pre>
+
+    // no método Main()
+
+
+    CalculadorDeMedias objetoApp = new CalculadorDeMedias();
+    objetoApp.Iniciar();
+
+</pre>
+
+Depois você pode mudar também o nome do método <code>Iniciar()</code> para algum outro que você prefira... Fique à vontade. O código é para ser seu e ele deve ser expressivo e fazer sentido, primeiro, para você. Depois trataremos de fazer ele ter sentido para outras pessoas, que irão ler o seu código.
