@@ -50,6 +50,7 @@ Para usar esse modelo você começa a escrever sua aplicação modificando o có
 
 Faça assim:
 
+1. Baixe os dois arquivos do modelo: <code>Program.cs</code> e <code>AppDesktop.cs</code> para uma diretório em seu computador
 1. Abra o arquivo <code>AppDesktop.cs</code>
 1. Escreva no corpo desse método <code>Iniciar()</code> as primeiras linhas código da sua aplicação (ou toda ela, caso ela seja muito curta, como a implementeção de um exercício de lógica de programação ;-) )
 1. Compile passando como parâmetro para o compilador os dois arquivos deste modelo: <code>Program.cs</code> e <code>AppDesktop.cs</code>
