@@ -11,6 +11,13 @@ O método <code>Main()</code> é obrigatório por exigência do C#. A classe cha
 
 Você começa a escrever sua aplicação acrescentando código ao método <code>Iniciar()</code> que já vem pronto. Depois basta compilar e executar o programa.
 
+## Objetivo do modelo (por quê usá-lo?)
+
+Pode parecer conveniente usar o método <code>Main()</code> para escrever o código da sua apliacação especialmente quando ela é muito simples. A implementação de um exercício de lógica, por exemplo, normalmente pode ser feita toda em um único método e poderíamos usar o método <code>Main()</code> para isso, já que ele é obrigatório e temos mesmo que escrevê-lo. 
+
+O problema de usar o método <code>Main()</code> para essa finalidade tem a ver com a modelagem orientada a objetos. É que um sistema orientado a objetos é, conceitualmente, composto por um conjunto de objetos que trocam mensagens uns com os outros solicitando a execução de métodos. Quem solicita a execução do método <code>Main()</code> não é nenhum objeto do sistema que estamos criando, mas sim o Sistema Operacional. Isso deixa as coisas confusas do ponto de vista da modelagem do sistema porque usando o método <code>Main()</code> para já escrever código da nossa aplicação estamos situando esse código em um ponto de passagem entre o Sistema Operacional (que é um sistema) e nosso programa (que é outro sistema) e assim não fica muito explícito que esse código que estamos escrevendo já faz parte de um novo sistema que está executando.
+
+O que este modelo de aplicação faz é dar para você um padrão de inicialização do sistema que vai deixar mais claro que o ponto inicial do seu sistema faz parte do seu sistema e não de outro. Vamos nos livrar o quanto antes dessa passagem entre entre sistemas e termos um ponto claro de inicio para o nosso sistema que seja dele e de ninguém mais.
 
 ## Como o modelo funciona
 
@@ -45,7 +52,7 @@ public void Iniciar()
 }
 </pre>
 
-Por isso é que sua aplicação desktop vai começar a executar, de fato, quando esse método <code>Iniciar()</code> da classe <code>AppDesktop</code> foi executado. Ele é que contém o primeiro código relevante da aplicação. Tudo que foi executado até aqui foi apenas com o objetivo de atender os padrões de inicialização de uma aplicação escrita em C#.
+Por isso é que vamos considerar que sua aplicação desktop vai começar a executar quando esse método <code>Iniciar()</code> da classe <code>AppDesktop</code> for executado. É porque ele é que contém o primeiro código relevante da aplicação. Tudo que foi executado até aqui foi apenas com o objetivo de atender os padrões de inicialização de uma aplicação escrita em C#.
 
 ## Como usar
 
