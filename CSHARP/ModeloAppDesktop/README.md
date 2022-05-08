@@ -15,9 +15,16 @@ Você começa a escrever sua aplicação acrescentando código ao método <code>
 
 Pode parecer conveniente usar o método <code>Main()</code> para escrever o código da sua apliacação especialmente quando ela é muito simples. A implementação de um exercício de lógica, por exemplo, normalmente pode ser feita toda em um único método e poderíamos usar o método <code>Main()</code> para isso, já que ele é obrigatório e temos mesmo que escrevê-lo. 
 
-O problema de usar o método <code>Main()</code> para essa finalidade tem a ver com a modelagem orientada a objetos. É que um sistema orientado a objetos é, conceitualmente, composto por um conjunto de objetos que trocam mensagens uns com os outros solicitando a execução de métodos. Quem solicita a execução do método <code>Main()</code> não é nenhum objeto do sistema que estamos criando, mas sim o Sistema Operacional. Isso deixa as coisas confusas do ponto de vista da modelagem do sistema porque usando o método <code>Main()</code> para já escrever código da nossa aplicação estamos situando esse código em um ponto de passagem entre o Sistema Operacional (que é um sistema) e nosso programa (que é outro sistema) e assim não fica muito explícito que esse código que estamos escrevendo já faz parte de um novo sistema que está executando.
+O problema de usar o método <code>Main()</code> para essa finalidade tem a ver com a modelagem orientada a objetos. 
 
-O que este modelo de aplicação faz é dar para você um padrão de inicialização do sistema que vai deixar mais claro que o ponto inicial do seu sistema faz parte do seu sistema e não de outro. Vamos nos livrar o quanto antes dessa passagem entre entre sistemas e termos um ponto claro de inicio para o nosso sistema que seja dele e de ninguém mais.
+É que um sistema orientado a objetos é, conceitualmente, composto por um conjunto de objetos que trocam mensagens uns com os outros solicitando a execução de métodos. Quem solicita a execução do método <code>Main()</code> não é nenhum objeto do sistema que estamos criando, mas sim o Sistema Operacional, que além disso não é um objeto.
+
+Isso deixa as coisas confusas do ponto de vista da modelagem do sistema porque:
+
+- usando o método <code>Main()</code> para já escrever código da nossa aplicação estamos situando esse código em um ponto de passagem entre o Sistema Operacional (que é um sistema) e nosso programa (que é outro sistema) e assim não fica muito explícito que esse código que estamos escrevendo já faz parte de um novo sistema que está executando.
+- nenhum objeto está enviando uma mensagem para nosso sistema para que ele inicie sua execução e é melhor ver esse momento, da primeira mensagem enviada, explícito no código.
+
+O que este modelo de aplicação faz é dar para você um padrão de inicialização do sistema que vai deixar mais claro que o ponto inicial do seu sistema faz parte do seu sistema e não de outro e deixar explícita a mensagem inicial e para qual objeto ela é enviada e quem está enviando ela. Assim vamos nos livrar o quanto antes dessa passagem entre entre sistemas (vamos nos livrar do método <code>Main()</code>) e teremos um ponto claro de inicio para o nosso sistema que seja dele e de ninguém mais.
 
 ## Como o modelo funciona
 
