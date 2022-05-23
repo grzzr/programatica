@@ -8,7 +8,12 @@ Tutoriais e ajuda para iniciar na programação.
 
 Esta é a primeira aula de uma série de introdução à programação que vou publicar aqui. Vamos começar conhecendo a linha de comando.
 
+# Programação para Web - CGI
+[CGI01 - Instalando um servidor web Apache (versão 2.4) no Linux (Debian 11/Ubuntu 22.04)](/cgi/CGI01-Instalando-servidor-web-Apache-no-Linux.md)
+
+[CGI02 - Configurando o Apache para CGI e testando com "hello world" em Python](/cgi/CGI02-Configurando-Apache-CGI-Primeiro-Programa.md)
 # Programação Orientada a Objetos
+
 [POO01 - Conceitos fundamentais de programação orientada a objetos](/poo/POO01-Conceitos-fundamentais-de-programacao-orientada-a-objetos.md)
 
 [POO02 - Arquitetura de um programa orientado a objetos](/poo/POO02-Arquitetura-de-um-programa-orientado-a-objetos.md)
@@ -26,4 +31,5 @@ Este é um modelo que escrevi para ajudar vocês a começarem a escrever uma apl
 Ele contém apenas um método Main(), que é obrigatório, e uma classe chamada AppDesktop que tem apenas um método definido, chamado Iniciar();
 
 # Glossário
+
 [Glossário](/glossario.md)
