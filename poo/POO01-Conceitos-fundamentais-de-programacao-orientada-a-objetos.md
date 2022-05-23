@@ -11,6 +11,7 @@ Podemos olhar para quaisquer objetos do mundo real e distinguir neles três cara
 - comportamentos
 
 Por exemplo, discos-voadores têm <code>estados</code>:
+
 - velocidade
 - carga dos lasers
 
@@ -29,7 +30,6 @@ e <code>comportamentos</code>:
 Objetos de software também têm propriedades, estados e comportamentos. Um objeto de software guarda seus estados e propriedades em variáveis e implementa seus comportamentos através de métodos (aquilo que em liguagens como C ou Pascal chamaríamos de procedimentos ou funções).
 
 ![Objetos - propriedades, estados e comportamentos](/img/poo01/POO01-Objetos-propriedades-estados-e-comportamentos.png)
-
 
 > Definição: Um <code>objeto</code> é um conjunto de variáveis e métodos relacionados em uma mesma estrutura de dados.
 
@@ -66,7 +66,6 @@ Podemos pensar nos seus métodos também como tudo aquilo que o objeto sabe faze
 
 ![Objeto disco-voador](/img/poo01/POO01-Objeto-disco-voador.png)
 
-
 > Definição: Um <code>método</code> é um trecho de código que executa uma tarefa (algorítmo, procedimento, etc.) e que possivelmente altera estados e propriedades de um objeto.
 
 O ponto importante é que essa alteração de estados e propriedades feita por um método seja consistente com aquilo que um disco-voador pode fazer, para que a modelagem desse objeto de software seja adequada ao objeto real.
@@ -78,7 +77,6 @@ Por exemplo:
 - não deve haver um método para trocar a velocidade, já que a velocidade do disco-voador é, na verdade, uma conseqüência de termos executado a operação <code>acelerar</code> ou <code>frear</code>, do número de rotações dos motores e também da velocidade do disco-voador antes dessas operações serem executadas.
 
 Em uma linguagem orientada a objetos, um programa escrito com um bom design irá tirar proveito dos métodos que são associados a um objeto para fazer com que esses métodos não coloquem o objeto em um estado instável, absurdo. Um bom conjunto de métodos irá, assim, contribuir para a boa representação que o objeto deve ser, em nosso programa, do objeto do mundo real e dos dados reais associados a ele.
-
 
 ## O que são mensagens?
 
@@ -98,32 +96,31 @@ Três componentes compreendem uma mensagem:
 
 Veja exemplos de mensagens sendo enviadas em diversas linguagens de programação:
 
-<pre>
-
-
+``` smalltalk
 "Smalltalk"
 
 disco dispararLasers: 5
+```
 
-
+``` C++
 /*
     C++, C#, Java
 */
 
 disco.dispararLasers(5);
 
+```
 
+``` lua
 /*
     Python, Lua
 */
 
 disco.dispararLasers(5)
 
+```
 
-
-</pre>
-
-Estes três componentes são informação suficiente para que o objeto receptor da mensagem execute o método desejado. Não é necessário nenhuma outra informação ou contexto.
+Esses três componentes são informação suficiente para que o objeto receptor da mensagem execute o método desejado. Não é necessário nenhuma outra informação ou contexto.
 
 Note que, não importa a linguagem de programação, a sintaxe da mensagem completa corresponde à sintaxe:
 

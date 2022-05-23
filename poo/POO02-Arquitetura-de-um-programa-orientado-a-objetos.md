@@ -6,10 +6,9 @@ Programas orientados a objeto são concebidos como uma imensa rede de troca de m
 
 A inspiração para o uso desse tipo de estrutura veio da biologia, do modo como células, cada uma especializada em uma tarefa, interagem para realizar tarefas complexas em conjunto.
 
-
 ![Células especializadas realizando tarefa em conjunto](/img/poo02/POO02-Celulas-especializadas-relizando-tarefa-em-conjunto.png)
 
-Cada objeto é especializdo em uma tarefa. Ele pode precisar realizar diversas funções para conseguir realizar essa sua tarefa e por isso ele pode ter vários métodos, mas conceitualmente a tarefa de cada objeto é uma só. 
+Cada objeto é especializdo em uma tarefa. Ele pode precisar realizar diversas funções para conseguir realizar essa sua tarefa e por isso ele pode ter vários métodos, mas conceitualmente a tarefa de cada objeto é uma só.
 
 No exemplo do disco-voador, sua tarefa é, por exemplo, ser um disco-voador e não uma vaca.
 
@@ -25,11 +24,11 @@ O <code>Comandante</code> (você) envia a mensagem <code>disco-voador abduzir va
 
 Em Java, C#, C++, a linha de código com essa mensagem seria:
 
-<pre>
+``` C++
 
 disco.abduzir(vaca);
 
-</pre>
+```
 
 > O objeto que envia a mensagem não aparece escrito no código. Devemos sempre fazer o trabalho de nos colocarmos no lugar desse objeto ao escrever o código. É algo que faz parte daquele exercício de abstrair ao qual me referi antes, e você vai ter que ficar bom nisso para programar.
 
@@ -45,10 +44,9 @@ Nenhum objeto interferiu diretamente nem nas ações nem nas propriedades ou est
 
 ![Encapsulamento e troca de mensagens - objetos](/img/poo02/POO02-Encapsulamento-e-troca-de-mensagens-objetos.png)
 
-
 Além disso, não foi solicitado ao objeto que ele fizesse algo que não saberia ou que não poderia fazer. O método <code>abduzir</code>, que recebe uma <code>Vaca</code> como parâmetro, estava definido para o <code>disco-voador</code> - alguém escreveu o código para esse método. 
 
-## Por quê *arquitetura*?
+## Por quê chamar de *arquitetura*?
 
 A palavra <code>arquitetura</code> significa <code>"colocar arcos"</code>. A ideia aqui é que para criar uma construção o importante é saber como planejar a colocação dos arcos que sustentarão a estrutura. É claro que para o projeto de uma construção são necessários mais do que apenas arcos, mas a origem da palavra vem dessa ideia e dessa estrutura de design muito básica, que é o <code>arco</code>.
 
@@ -59,13 +57,4 @@ As principais relações entre os objetos que precisamos saber definir são as d
 - quais as partes do objeto (propriedades e estados)
 - como ele se comunica com outros objetos (métodos/mensagens)
 
-São esses relacionamentos entre os objetos que sustentarão a aplicação. Isso é o que chamamos de <code>arquitetura</code> do sistema. 
-
-Normalmente a arquitetura de um sistema é a definição do sistema em um nível bastante abstrato, uma visão geral do sistema. Você já deve ter ouvido falar de uma arquitetura de sistemas chamada "cliente-servidor". Essa arquitetura relaciona dois tipos de objetos que pertencerão ao sistema: uns chamados de "clientes" e outros chamados "servidores". A arquitetura caracteriza esses objetos segundo o modo como eles se relacionam:
-
-- servidores: são os que executam tarefas para os clientes
-- clientes: são os que solicitam tarefas para os servidores
-
-Parecido com o modelo de comunicação que vimos para objetos, não é? O emissor da mensagem é o cliente e o objeto que recebe a mensagem e executa o método é o servidor. 
-
-Na próxima sessão vamos ver uma arquitetura para sistemas que têm uma interface com o usuário. Ela também vai se parecer com o modelo de objetos que acabamos de ver...
+São esses relacionamentos entre os objetos que sustentarão a aplicação. Isso é o que chamamos de <code>arquitetura</code> do sistema.
